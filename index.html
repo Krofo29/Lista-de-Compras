@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <link rel="icon" href="Icono/Icono.png" type="image/png">
+    <title>Lista de Compras</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 id="tituloLista" onclick="cambiarTitulo()">LISTA DE COMPRAS</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="text" class="form-control" id="producto" placeholder="INGRESA TU PRODUCTO">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="text" class="form-control" id="cantidad" placeholder="CANTIDAD">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" onclick="agregarProducto()" style="margin-top: 0px; width: fit-content;">AGREGAR</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="lista"></div>
+
+    <div class="row">
+        <div>
+            <button class="btn btn-success btn-block" onclick="finalizar()" style="width: fit-content;">DESCARGAR PDF</button>
+        </div>
+        <button class="btn btn-primary" onclick="copiarAlPortapapeles()" style="width: fit-content; margin-left: 10px;">COPIAR</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

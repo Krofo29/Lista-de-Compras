@@ -1,0 +1,77 @@
+body {
+    background-color: #000000;
+    color: white;
+}
+
+.container {
+    background-color: rgba(66, 66, 66, 0.986);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container input[type="text"] {
+    background-color: rgba(66, 66, 66, 0.986);
+    color: white;
+    font-size: 16px;
+}
+
+.container button {
+    background-color: #007bff;
+    color: white;
+    width: fit-content;
+    margin-left: 10px;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#lista {
+    margin-bottom: 20px;
+}
+
+.container input[type="text"]::placeholder {
+    color: white;
+}
+
+.container .btn-danger {
+    background-color: #ff0000;
+    color: white;
+    width: fit-content;
+}
+
+.container button {
+    background-color: #4c4c4c;
+    color: white;
+    width: fit-content;
+    margin-left: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container #agregar-btn {
+    background-color: #4c4c4c;
+    color: white;
+    border: 2px solid white;
+    transition: background-color 0.3s ease;
+}
+
+.container #agregar-btn:hover {
+    background-color: #28a745 !important;
+}
+
+.container #descargar-btn {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid white;
+}
+
+.container #copiar-btn {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid white;
+}
